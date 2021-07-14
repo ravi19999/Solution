@@ -1,8 +1,9 @@
 import React from "react";
+import "./_services.scss";
 
 const Services = () => {
   return (
-    <section className="services hal-container">
+    <section className="services half-container">
       <h1 className="services__header">PICK A SERVICE TO VIEW ITS PRICING</h1>
       <div className="services__container">
         <h4 className="services__container__content">

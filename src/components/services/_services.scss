@@ -1,0 +1,9 @@
+@import "../../scss/variables";
+
+.services {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

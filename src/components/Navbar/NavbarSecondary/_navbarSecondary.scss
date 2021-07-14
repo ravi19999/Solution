@@ -1,0 +1,31 @@
+@import "../../../scss/variables";
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.navbar-secondary {
+  border-bottom: 1px solid $navbarTextColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.5%;
+  &__text {
+    color: $primaryColor;
+    font-weight: 1000;
+
+    & span {
+      color: $secondaryColor;
+      font-weight: 1000;
+    }
+  }
+  &__language {
+    color: $primaryColor;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-right: 2px solid $primaryColor;
+    border-left: 2px solid $primaryColor;
+    font-weight: bolder;
+  }
+}
