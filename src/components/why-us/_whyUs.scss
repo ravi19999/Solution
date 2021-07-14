@@ -1,0 +1,76 @@
+@import "../../scss/variables";
+
+.why-us {
+  display: flex;
+  flex-direction: row;
+  background-color: #041028;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  &__left {
+    max-width: 30%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+      color: $primaryColor;
+      font-size: 30px;
+    }
+    &__body {
+      line-height: 1.5;
+      color: white;
+      font-size: 1rem;
+    }
+    &__button {
+      background-color: transparent;
+      color: white;
+      padding: 10px 60px;
+      border-radius: 20px;
+      border-color: #40c270;
+      border-width: 3px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    background-color: #1b2a45;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    margin-top: -50px;
+    margin-bottom: -30px;
+    &__cards {
+      & > div > div > h4 {
+        color: #40c270;
+      }
+      & > div > div > p {
+        color: white;
+      }
+
+      margin-right: 5%;
+
+      &__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: initial;
+        & > svg {
+          font-size: 40px;
+          color: white;
+          width: 100%;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+}
+
+.half-container {
+  padding-right: 5%;
+  padding-left: 5%;
+}

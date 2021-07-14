@@ -1,0 +1,72 @@
+@import "../../scss/variables";
+
+.main {
+  padding-top: 5%;
+  text-align: center;
+  height: 80;
+  overflow: hidden;
+
+  background-image: url("./background.jpg");
+  &__header {
+    color: $primaryColor;
+    // text-align: center;
+    font-size: 2em;
+    margin-bottom: 0px !important;
+  }
+  &__body {
+    color: $white;
+    // text-align: center;
+    font-size: 1.1em;
+    // margin-top: 0px;
+  }
+  &__button {
+    background-color: transparent;
+    text-align: center;
+    padding: 1em 4em;
+    border-radius: 10px;
+    font-weight: bold;
+    color: $white;
+    border: 3px solid $buttonColor;
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 7%;
+
+  &__card {
+    border-bottom: 10px solid $secondaryColor;
+    max-height: fit-content;
+    padding-bottom: 5%;
+    overflow: hidden;
+
+    &__header {
+      color: $white;
+    }
+    &:hover > p {
+      visibility: visible;
+      // display: contents;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.5);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    &__body {
+      color: $white;
+      // display: none;
+      visibility: hidden;
+    }
+    &__link {
+      font-weight: bolder;
+      font-size: larger;
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+}
