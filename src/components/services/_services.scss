@@ -1,9 +1,85 @@
 @import "../../scss/variables";
 
 .services {
+  &__header {
+    text-align: center;
+  }
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    &__content {
+      background-color: #e0e1e0;
+      padding: 1rem 3rem;
+      color: #797978;
+      width: max-content;
+      font-size: 1.5rem;
+
+      &:hover {
+        background-color: $cardColor;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  &__second-header {
+    color: $primaryColor;
+    margin-bottom: 0px;
+  }
+  &__sub-header {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 5%;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    &__card {
+      &:nth-child(2) {
+        margin-top: -30px;
+        margin-bottom: -20px;
+        border: 5px solid $cardColor;
+      }
+      &__header {
+        padding-top: 0.1%;
+        padding-bottom: 0.5%;
+        background-color: #041028;
+        &__text {
+          color: $cardColor;
+          font-size: 1.5rem;
+          margin-bottom: 0px;
+        }
+        &__money {
+          color: $white;
+          margin-top: 1%;
+          margin-bottom: 1%;
+          font-size: 2.5rem;
+        }
+        &__learn-more {
+          background-color: transparent;
+          color: $white;
+          padding: 10px 40px;
+          border-color: $white;
+          border-width: 2px;
+        }
+      }
+      &__body {
+        list-style: none;
+        &__li {
+          display: flex;
+          flex-direction: row;
+          // justify-content: space-between;
+          align-items: center;
+          // text-align: center;
+
+          & > svg {
+            color: $cardColor;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
   }
 }
